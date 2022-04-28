@@ -13,7 +13,7 @@ const aRecibos = {
         return this.recibos.sort((a,b) => a.importe - b.importe)
     },
     soloConR(){
-        return this.recibos.filter(recibos => (recibos.cliente.charAt(0) == 'R'))
+        return this.recibos.filter(recibos => ((recibos.cliente.charAt(0) == 'R') ||(recibos.cliente.charAt(0) == 'r')) )
     },
     aumentoDel30(){
         return this.recibos.map(recibos => {return { id: recibos.id, numero : recibos.numero, importe: (recibos.importe * 1.3), cliente: recibos.cliente}})
