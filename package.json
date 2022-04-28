@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "habiboparcial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {"test": "test"},
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/indexTest.js",
+    "dev" : "nodemon src/index.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
